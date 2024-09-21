@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <display-name>Mi app</display-name>
+  <welcome-file-list>
+    <welcome-file>principal.html</welcome-file>
+    <welcome-file>principal.xhtml</welcome-file>
+    <welcome-file>principal.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <servlet>
+    <description>Este es un servlet para mostrarles un ejemplo inicial</description>
+    <display-name>Ejemplo inicial</display-name>
+    <servlet-name>servletazo</servlet-name>
+    <servlet-class>com.pepe.p20240919.Controllers.PrimerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletazo</servlet-name>
+    <url-pattern>/ejemplo1</url-pattern>
+  </servlet-mapping>
+</web-app>
