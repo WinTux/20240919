@@ -32,7 +32,7 @@ public class PrimerController extends HttpServlet {
 		String correo = request.getParameter("email");
 		String llave = (String) request.getAttribute("llave");
 		out.println("<html><h1>Hola querido "+ nombre  + " (" + correo +") [GET]</h1></html>");
-		response.sendRedirect("segundo");
+		//response.sendRedirect("segundo");
 	}
 
 	/**
