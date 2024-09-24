@@ -25,19 +25,23 @@ public class PrimerController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("[GET] Served at: ").append(request.getContextPath());
 		
 		PrintWriter out = response.getWriter();
-		out.append("BLABLABLA");
+		//out.append("BLABLABLA");
+		String nombre = request.getParameter("usuario");
+		String correo = request.getParameter("email");
+		out.println("<html><h1>Hola querido "+ nombre  + " (" + correo +") [GET]</h1></html>");
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("[POST] Served at: ").append(request.getContextPath());
+		//response.getWriter().append("[POST] Served at: ").append(request.getContextPath());
+		PrintWriter out = response.getWriter();
+		String nombre = request.getParameter("usuario");
+		String correo = request.getParameter("email");
+		out.println("<html><h1>Hola querido "+ nombre  + " (" + correo +") [POST]</h1></html>");
 	}
 
 }
