@@ -19,4 +19,15 @@
     <servlet-name>servletazo</servlet-name>
     <url-pattern>/ejemplo1</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EjemploDispatcherController</display-name>
+    <servlet-name>EjemploDispatcherController</servlet-name>
+    <servlet-class>com.pepe.p20240919.Controllers.EjemploDispatcherController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EjemploDispatcherController</servlet-name>
+    <url-pattern>/dispatcher</url-pattern>
+    <url-pattern>/requestdispatcher</url-pattern>
+  </servlet-mapping>
 </web-app>

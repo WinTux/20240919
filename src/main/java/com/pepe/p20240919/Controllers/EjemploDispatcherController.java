@@ -1,22 +1,23 @@
 package com.pepe.p20240919.Controllers;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
+
 /**
- * Servlet implementation class PrimerController
+ * Servlet implementation class EjemploDispatcherController
  */
-public class PrimerController extends HttpServlet {
+public class EjemploDispatcherController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PrimerController() {
+    public EjemploDispatcherController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -25,25 +26,22 @@ public class PrimerController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// Lineas de codigo haciendo algo
+		request.setAttribute("llave", "Esta es una llave");
+		request.setAttribute("email", 23);
 		
-		PrintWriter out = response.getWriter();
-		//out.append("BLABLABLA");
-		String nombre = request.getParameter("usuario");
-		String correo = request.getParameter("email");
-		String llave = (String) request.getAttribute("llave");
-		out.println("<html><h1>Hola querido "+ nombre  + " (" + correo +") [GET]</h1></html>");
-		response.sendRedirect("segundo");
+		RequestDispatcher rd = request.getRequestDispatcher("ejemplo1");
+		rd.forward(request, response);
+		
+		
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//response.getWriter().append("[POST] Served at: ").append(request.getContextPath());
-		PrintWriter out = response.getWriter();
-		String nombre = request.getParameter("usuario");
-		String correo = request.getParameter("email");
-		out.println("<html><h1>Hola querido "+ nombre  + " (" + correo +") [POST]</h1></html>");
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }
