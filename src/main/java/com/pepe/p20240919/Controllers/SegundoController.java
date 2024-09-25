@@ -10,6 +10,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 @WebServlet(name="abc", urlPatterns="/segundo", initParams= {@WebInitParam(name="prueba", value="algo")})
 public class SegundoController extends HttpServlet  {
 
@@ -21,7 +22,9 @@ public class SegundoController extends HttpServlet  {
 		PrintWriter out = response.getWriter();
 		String parametro = request.getParameter("prueba");
 		out.println("<html><h1>Parametro inicial: "+ parametro  +") </h1></html>");
-	
+		HttpSession sesion = request.getSession();
+		String valor = (String) sesion.getAttribute("un_parametro");
+		// completar ejemplo sesiones
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// Lineas de codigo haciendo algo

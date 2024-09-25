@@ -5,6 +5,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 /**
@@ -32,7 +34,10 @@ public class PrimerController extends HttpServlet {
 		String correo = request.getParameter("email");
 		String llave = (String) request.getAttribute("llave");
 		out.println("<html><h1>Hola querido "+ nombre  + " (" + correo +") [GET]</h1></html>");
-		//response.sendRedirect("segundo");
+		
+		HttpSession sesion = request.getSession();
+		sesion.setAttribute("un_parametro", "Este es un valor de sesion");
+		response.sendRedirect("segundo");
 	}
 
 	/**

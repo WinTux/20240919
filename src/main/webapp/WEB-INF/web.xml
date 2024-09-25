@@ -30,4 +30,38 @@
     <url-pattern>/dispatcher</url-pattern>
     <url-pattern>/requestdispatcher</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EjemploSesionesController</display-name>
+    <servlet-name>EjemploSesionesController</servlet-name>
+    <servlet-class>com.pepe.p20240919.Controllers.EjemploSesionesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EjemploSesionesController</servlet-name>
+    <url-pattern>/EjemploSesiones</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EjemploCookie</display-name>
+    <servlet-name>EjemploCookie</servlet-name>
+    <servlet-class>com.pepe.p20240919.Controllers.EjemploCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EjemploCookie</servlet-name>
+    <url-pattern>/EjemploCookie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EjemploCookie2</display-name>
+    <servlet-name>EjemploCookie2</servlet-name>
+    <servlet-class>com.pepe.p20240919.Controllers.EjemploCookie2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EjemploCookie2</servlet-name>
+    <url-pattern>/EjemploCookie2</url-pattern>
+  </servlet-mapping>
+  <context-param>
+  	<param-name>usu</param-name>
+  	<param-value>Ana</param-value>
+  </context-param>
 </web-app>
