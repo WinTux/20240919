@@ -16,6 +16,7 @@
 		int cantidad = 0;
 		out.println(nombre+" "+(contador/cantidad));
 	%>
+	<%-- ${usuario} sirve para mostrar un atributo (que viene en el request) mediante EL --%>
 	
 	<%-- Declaration --%>
 	<%! int contador; %>
