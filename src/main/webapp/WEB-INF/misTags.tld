@@ -1,0 +1,15 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>Tag de cards</short-name>
+	<tag>
+		<name>card</name>
+		<tag-class>com.pepe.p20240919.Tags.CardTag</tag-class>
+		<body-content>default</body-content>
+	</tag>
+	<tag>
+		<name>card2</name>
+		<tag-class>com.pepe.p20240919.Tags.Card2Tag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+</taglib>
