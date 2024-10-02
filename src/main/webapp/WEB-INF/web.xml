@@ -61,7 +61,26 @@
     <url-pattern>/EjemploCookie2</url-pattern>
   </servlet-mapping>
   <context-param>
-  	<param-name>usu</param-name>
-  	<param-value>Ana</param-value>
+    <param-name>usu</param-name>
+    <param-value>Ana</param-value>
   </context-param>
+  <filter>
+    <display-name>EjemploFiltro</display-name>
+    <filter-name>EjemploFiltro</filter-name>
+    <filter-class>com.pepe.p20240919.Filtros.EjemploFiltro</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EjemploFiltro</filter-name>
+    <url-pattern>/filtros</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ParaEjemploFiltro</display-name>
+    <servlet-name>ParaEjemploFiltro</servlet-name>
+    <servlet-class>com.pepe.p20240919.Controllers.ParaEjemploFiltro</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParaEjemploFiltro</servlet-name>
+    <url-pattern>/filtros</url-pattern>
+  </servlet-mapping>
 </web-app>
