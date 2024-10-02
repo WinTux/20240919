@@ -14,6 +14,13 @@
 	<bs:card/>
 	<p>Con apertura y cierre</p>
 	<bs:card2>Este es el cuerpo de card</bs:card2>
+	<h3>Etiqueta con atributos y body</h3>
+	<bs:card3 titulo="Precio de oferta" textoboton="Comprar">
+		Este producto cuenta con un descuento del 10% para todo el mes de Octubre.
+	</bs:card3>
+	<bs:card3 titulo="Precio de remate">
+		Este producto cuenta con un descuento del 50% para todo el mes de Octubre.
+	</bs:card3>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

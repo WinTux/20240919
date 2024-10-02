@@ -12,4 +12,15 @@
 		<tag-class>com.pepe.p20240919.Tags.Card2Tag</tag-class>
 		<body-content>scriptless</body-content>
 	</tag>
+	<tag>
+		<name>card3</name>
+		<tag-class>com.pepe.p20240919.Tags.Card3Tag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>titulo</name>
+		</attribute>
+		<attribute>
+			<name>textoboton</name>
+		</attribute>
+	</tag>
 </taglib>
