@@ -83,4 +83,24 @@
     <servlet-name>ParaEjemploFiltro</servlet-name>
     <url-pattern>/filtros</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Login_Verifica</display-name>
+    <servlet-name>Login_Verifica</servlet-name>
+    <servlet-class>com.pepe.p20240919.Controllers.Login_Verifica</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login_Verifica</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Login_Verifica_logout</display-name>
+    <servlet-name>Login_Verifica_logout</servlet-name>
+    <servlet-class>com.pepe.p20240919.Controllers.Login_Verifica_logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login_Verifica_logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
 </web-app>
