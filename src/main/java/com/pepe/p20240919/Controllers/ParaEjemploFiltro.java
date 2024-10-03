@@ -27,7 +27,7 @@ public class ParaEjemploFiltro extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nombre = request.getParameter("n");
 		int edad = Integer.parseInt(request.getParameter("e"));
-		response.getWriter().append("Buenas noches " + nombre+ ", me dices tener" + edad +" años.");
+		response.getWriter().append("Buenas noches " + nombre+ ", me dices tener " + edad +" años.");
 	}
 
 	/**
